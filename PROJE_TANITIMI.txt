@@ -1,0 +1,43 @@
+TASKFLOW – Görev ve Proje Yönetim Sistemi
+
+1. Projenin Amacı
+
+Bu projede Node.js ve Express.js kullanarak bir görev yönetim sistemi için REST API geliştirdim. Amacım, bir ekipteki görevlerin tek bir sistem üzerinden oluşturulmasını, listelenmesini, güncellenmesini ve silinmesini sağlamak.
+
+2. Kullanım Senaryosu
+
+Sistem, yazılım geliştirme ekibinin görevlerini takip etmesi için tasarlandı. Örneğin İlayda kullanıcı giriş sistemi üzerinde çalışırken Berkcan veritabanı tasarımıyla ilgilenebilir.
+
+Her görevin başlığı, açıklaması, sorumlu kişisi, önceliği ve durumu bulunur. Görevlerin durumu ihtiyaç halinde güncellenebilir.
+
+3. Sistem Tasarımı
+
+Uygulama, Node.js üzerinde Express.js kullanılarak geliştirildi. İstemciden gelen HTTP istekleri ilgili API endpoint'ine yönlendirilir ve sonuç JSON formatında döndürülür.
+
+Görevler ID, title, description, assignedTo, priority ve status alanlarıyla temsil edilir.
+
+Veriler şu an JavaScript dizisinde tutulmaktadır. Kalıcı bir veritabanı kullanılmamaktadır.
+
+4. API İşlemleri
+
+GET /tasks – Tüm görevleri listeler.
+
+GET /tasks/ – ID ile belirli bir görevi getirir.
+
+POST /tasks – Yeni görev oluşturur.
+
+PUT /tasks/ – Mevcut görevi günceller.
+
+DELETE /tasks/ – Görevi siler.
+
+5. Logger Middleware
+
+API'ye gelen istekleri takip etmek için bir logger middleware geliştirdim. Bu yapı, her isteğin HTTP metodunu, endpoint adresini ve zaman bilgisini konsola yazdırır.
+
+6. Testler ve Sonuç
+
+API işlemlerini Postman üzerinden test ettim. CRUD işlemlerinin çalıştığını ve logger middleware'in gelen istekleri kaydettiğini kontrol ettim.
+
+Test ekran görüntülerini proje klasöründeki Screenshots klasörüne kaydettim.
+
+Bu proje sayesinde Express.js ile routing, REST API geliştirme, CRUD işlemleri ve middleware kullanımı konularını uygulamalı olarak çalıştım.
