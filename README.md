@@ -85,21 +85,13 @@ API adresi: `http://localhost:3000`
 
 
 ```json
-
 {
-
-&#x20; "title": "Database tasarimi",
-
-&#x20; "description": "Veri modelini olustur",
-
-&#x20; "assignedTo": "Berkcan",
-
-&#x20; "priority": "medium",
-
-&#x20; "status": "pending"
-
+  "title": "Database tasarimi",
+  "description": "Veri modelini olustur",
+  "assignee": "Berkcan",
+  "priority": "medium",
+  "status": "pending"
 }
-
 ```
 
 
